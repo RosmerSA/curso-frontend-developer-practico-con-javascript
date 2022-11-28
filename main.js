@@ -9,7 +9,7 @@ const cardsContainer = document.querySelector('.cards-container');
 const aside = document.querySelector(".product-detail");
 const productDetailCloseIcon = document.querySelector('.product-detail-close');
 const productDetailContainer = document.querySelector(".product-detail-secundary");
-const darker = document.querySelector('.darker');
+// const darker = document.querySelector('.darker');
 
 menuEmail.addEventListener("click", toggleDesktopMenu);
 burgerMenu.addEventListener("click", toggleMobileMenu);
@@ -26,7 +26,7 @@ function toggleDesktopMenu() {
 
   mobileMenu.classList.add("inactive");
   aside.classList.add("inactive");
-  darker.classList.toggle('inactive');
+  // darker.classList.toggle('inactive');
 }
 
 function toggleMobileMenu() {
@@ -58,12 +58,12 @@ function openProductDetailAside() {
   aside.classList.add("inactive");
   mobileMenu.classList.add("inactive");
   desktopMenu.classList.add("inactive");
-  darker.classList.toggle('inactive');
+  // darker.classList.toggle('inactive');
 }
 
 function closeProductDetailAside() {
   productDetailContainer.classList.add('inactive');
-  darker.classList.toggle('inactive');
+  // darker.classList.toggle('inactive');
 }
 
 // ARRAY DE PRODUCTOS (Simulación de APIs)
@@ -79,6 +79,36 @@ productList.push({
 productList.push({
   name: 'TV',
   price: 280,
+  image: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+});
+
+productList.push({
+  name: 'Computer',
+  price: 650,
+  image: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+});
+
+productList.push({
+  name: 'Computer',
+  price: 650,
+  image: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+});
+
+productList.push({
+  name: 'Computer',
+  price: 650,
+  image: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+});
+
+productList.push({
+  name: 'Computer',
+  price: 650,
+  image: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+});
+
+productList.push({
+  name: 'Computer',
+  price: 650,
   image: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
 });
 
