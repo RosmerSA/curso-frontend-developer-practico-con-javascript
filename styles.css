@@ -25,24 +25,21 @@ body {
 
 /* DARKER - CLASE PARA FONDO AL DESPLEGAR MENÚS */
 
-.darker {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: rgba(0,0,0,.6);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
+
+
+/* .darker {
+  
+} */
 
 /* ESTILOS PARA LA BARRA DE NAVEGACIÓN SUPERIOR */
 
 nav {
   display: flex;
+  position: relative;
   justify-content: space-between;
   padding: 0 24px;
   border-bottom: 1px solid var(--very-light-pink);
+  z-index: 2;
 }
 
 .menu {
@@ -141,7 +138,7 @@ nav {
   border: 1px solid var(--very-light-pink);
   border-radius: 6px;
   padding: 20px 20px 0 20px;
-  z-index: 100;
+
 }
 
 .desktop-menu ul {
@@ -329,7 +326,6 @@ nav {
   background-color: var(--white);
   position: absolute;
   right: 0;
-  z-index: 10;
 }
 .product-detail-close {
   background: var(--white);
@@ -338,7 +334,6 @@ nav {
   position: absolute;
   top: 24px;
   left: 24px;
-  z-index: 2;
   padding: 12px;
   border-radius: 50%;
 }
